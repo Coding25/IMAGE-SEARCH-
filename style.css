@@ -1,0 +1,78 @@
+*{
+    background-color: whitesmoke;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input{
+    width: 800px;
+    height: 40px;
+    border-radius: 6px;
+    border-color: white;
+    background-color: white;
+    font-style: inherit;
+}
+
+#material-icons{
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 6px;
+    margin-left: 5px;
+}
+
+.images-container{
+    margin-block: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.images-container .imageDiv{
+    position: relative;
+}
+
+.images-container img{
+    width: 300px;
+    height: 200px;
+}
+
+.imageDiv .overlay{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: height 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageDiv:hover .overlay{
+    height: 90%;
+}
+
+.imageDiv:hover .overlay h2{
+    display: block;
+}
+
+.show-more-button{
+    display: block;
+    width: 100px;
+    height: 35px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 10px;
+    margin-left: 600px;
+    cursor: pointer;
+}
